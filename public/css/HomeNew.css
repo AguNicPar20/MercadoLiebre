@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2? family= PT+Sans:ital,wght@1,700 & family= Roboto:ital,wght@0,300;0,400;1,500;1,700 & display= intercambio');
+:root {
+    /*Colors*/
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    /*Font Family*/
+    --roboto: 'Roboto', sans-serif;
+    /*Font Sizes*/
+    --text: 12px;
+    --title: 24px;
+    --text-lg: 18px;
+    --text-md: 16px;
+}
+*{
+    font-family: var(--roboto);
+    font-size: var(--text);
+}
+h3{
+    font-size: var(--title);
+}
+p.price{
+    width: 40%;
+    font-size: var(--text-lg);
+}
+p.discount{
+    width: 70%;
+}
+.discount,
+.description{
+    font-size: var(--text-md);
+}
+
+.description{
+  
+    color: var(--gris-oscuro);
+}
+
+/*HEADER*/
+header{
+    padding: 1em 1em 2em;
+    background: var(--amarillo);
+}
+div.top-header p{
+    text-align: center;
+    flex-grow: 1;
+}
+div.top-header{
+    padding: 2.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+
+}
+header picture.logo{
+   width:  50%;
+    max-width: 250px;
+}
+img{
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 12px;
+
+}
+body{
+   
+    flex-wrap: wrap;
+    margin-block: 0;
+    background: var(--gris-claro);
+}
+
+div.input{
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+ul{
+    list-style: none;
+}
+div.burger-menu{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    
+}
+i.fa.fa-bars.burger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0044aa;
+    color: white;
+    height: 40px;
+    width: 40px;
+    margin: 10px o 20px 0;
+    border-radius: 5px; 
+    font-size: 20px;
+}
+input.input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    flex-grow: 1;
+
+}
+
+form{
+    display: flex;
+    flex-grow: 2;
+   
+}
+button.submit{
+    
+    height: 100%;
+    padding: 10px;
+    background-color: white;
+    color: var(--gris-oscuro);
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+button.submit:hover{
+    cursor: pointer;
+}
+/*MAAIINN*/
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+main{
+   flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90%;
+}
+article{
+    margin: 10px 0;
+    background-color: white;
+}
+
+
+div.main-article{
+   
+    
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+div.informacion{
+    display: flex;
+    align-items: stretch;
+  
+
+}
+
+i.fas.fa-truck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--text-md);
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    color: var(--verde);
+    position: absolute;
+    right: 40px;
+    top: -15px;
+    
+}
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+    main section article:hover i{
+        transform: rotate(-90deg);
+        transition-duration: 0.5s;  
+    }
+    
+    main section article i{
+        transform: rotate(0deg);
+        transition-duration: 0.5s;  
+    }
+
+article:hover .description {
+
+    opacity: 1;
+    transition-duration: 1s;
+    
+}
+
+article:hover{
+
+    cursor: pointer;
+    
+}
+p.discount{
+    color: var(--verde);
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+/*FOOTER*/
+
+footer{
+    margin: 0 auto;
+    padding: 40px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    color: var(--gris-oscuro);
+    background-color: white;
+    
+}
+section.info-footer{
+    text-align: center;
+    margin: 30px auto;
+    width: 100%;
+}
+.info-footer i:hover{
+    color: #03264c;
+
+}
+.info-footer i{
+    font-size: 2em;
+    color: var(--celeste);
+    margin-bottom: 10px;
+}
+
+h4{
+    font-size: 15px;
+    margin: 10px;
+}
+
+@media (max-width: 360px){
+    
+    nav {
+        display: none;
+    }
+    h4.description{
+        opacity: 0;
+    }
+    }
+    
+    
+   
+    @media (min-width: 361px){
+     div.burger-menu {
+          display: none ;}
+         
+    header nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        
+    }
+    
+    }
+    
+    
+    @media (min-width: 361px) and (max-width: 769px){
+       
+        div.products {  
+           display: grid;  
+           grid-gap: 5px;  
+           grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));  
+           gap: 10px;   
+           justify-content: space-between;
+           align-items: flex-start;
+       }       
+    
+    }
+    @media (min-width: 769px) {
+       
+        div.products {  
+           display: grid;  
+           grid-gap: 5px;  
+           grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));  
+           gap: 10px;   
+           justify-content: space-between;
+           align-items: flex-start;
+       }       
+    
+    }
+    
+    /*
+    @media (min-width: 769px){
+        div.products{
+            display: flex;
+            gap: 10px;
+           
+            justify-content: space-between;
+            align-items: flex-start;
+                  }
+    }*/
+    @media (min-width: 769px){
+        footer {
+            flex-direction: row;
+        }
+    }
+    
+    
+/*
+
+    div.products{
+        display: grid;  
+        grid-gap: 5px;  
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+        gap: 10px;   
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+
+
+}
+
+@media (min-width: 769px){
+    div.products{
+        display: flex;
+        gap: 10px;
+       
+        justify-content: space-between;
+        align-items: flex-start;
+              }
+}
+
+@media (min-width: 769px){
+    footer {
+        flex-direction: row;
+    }
+}
+*/

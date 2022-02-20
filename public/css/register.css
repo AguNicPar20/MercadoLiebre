@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2? family= PT+Sans:ital,wght@1,700 & family= Roboto:ital,wght@0,300;0,400;1,500;1,700 & display= intercambio');
+:root {
+    /*Colors*/
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    /*Font Family*/
+    --roboto: 'Roboto', sans-serif;
+    /*Font Sizes*/
+    --text: 12px;
+    --title: 24px;
+    --text-lg: 18px;
+    --text-md: 16px;
+}
+*{
+    font-family: var(--roboto);
+    font-size: var(--text);
+}
+/*BOOODDYY*/
+
+body{
+    background-color: var(--gris-claro);
+}
+
+/*HEADER*/
+
+header{
+    padding: 1em 1em 2em;
+    background: var(--amarillo);
+}
+div.top-header p{
+    text-align: center;
+    flex-grow: 1;
+}
+div.top-header{
+    padding: 2.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+
+}
+header picture.logo{
+   width:  50%;
+    max-width: 250px;
+}
+img{
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 12px;
+
+}
+
+div.input{
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+ul{
+    list-style: none;
+}
+div.burger-menu{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    
+}
+i.fas.fa-bars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0044aa;
+    color: white;
+    height: 40px;
+    width: 40px;
+    margin: 10px o 20px 0;
+    border-radius: 5px; 
+    font-size: 20px;
+}
+input.input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    flex-grow: 1;
+
+}
+input#avatar:hover{
+cursor: pointer;
+}
+
+div.form{
+    display: flex;
+    flex-grow: 2;
+   
+}
+
+div.submit{
+    
+    height: 100%;
+    padding: 10px;
+    background-color: white;
+    color: var(--gris-oscuro);
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+/*MAIN*/
+
+main.register{
+    padding-top: 1.6em;
+    min-height: 100vh;
+    width: 70%;
+
+}
+main{
+    width: 50%;
+    margin: 0 auto;
+}
+h3.registro{
+    font-size: var(--text-md);
+    width: 90%;
+    padding: 1em;
+    text-align: center;
+    margin: 0 auto;
+}
+h4{
+    margin-top: 1em;
+    font-size: 16px;
+    width: 100%;
+}
+form{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+input{
+  
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    
+}
+div.fecha{
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+}
+div.caracter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.3em;
+    gap: 2em;
+}
+div.interes{
+    display: flex;
+    flex-direction: column;
+    margin: 0.3em;
+}
+div.formGroup{
+    display: flex;
+    flex-direction: column;
+}
+div.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+}
+.btn{
+    background-color: var(--celeste);
+    color: white;
+    width: 50%;}
+    .btn:hover{
+        transition: 0.5s ease;
+   background-color:  blue;
+    cursor: pointer;}
+    
+
+
+label.labelTitle{
+    font-size: 12px;
+    margin-top: 1em; 
+}
+label.titulo{
+    font-size: 12px;
+    margin-top: 1em;
+
+}
+
+input#birthday{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+
+}
+/*FOOTER*/
+
+footer{
+    margin: 0 auto;
+    padding: 40px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    color: var(--gris-oscuro);
+    background-color: white;
+    
+}
+.contenido-footer{
+    width: 30%;
+    margin: 30px auto;
+    text-align: center;
+}
+section.contenido-footer{
+    text-align: center;
+    margin: 30px auto;
+    width: 30%;
+}
+.contenido-footer i:hover{
+    color: #03264c;
+
+}
+.contenido-footer i{
+    font-size: 2em;
+    color: var(--celeste);
+    margin-bottom: 10px;
+}
+@media (max-width: 360px){
+    
+    nav {
+        display: none;
+    }
+}
+@media (min-width: 361px){
+    div.burger-menu {
+         display: none ;
+     }
+   
+   
+   header nav{
+       
+     
+       flex-direction: row;
+       flex-wrap: wrap;
+       display: flex;
+       
+   }
+}
+@media (min-width: 769px){
+    footer { flex-direction: row;
+        flex-wrap: wrap;
+}
+}
